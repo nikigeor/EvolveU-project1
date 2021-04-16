@@ -1,0 +1,85 @@
+
+.choice-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0.5rem;
+    width:50%;
+    font-size: 1.8rem;
+    border: 0.1rem solid rgb(red, green, blue);
+    background-color: rgb(255, 255, 255);
+    color: black;
+} 
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+  }
+  p {
+      color: black;
+      display: flex;
+  }
+
+h2 {
+    color: grey;
+}
+
+body {
+    background-color: rgb(43, 39, 39);
+}
+
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: rgb(215, 216, 215);
+    margin: auto;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 10px 2px;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: rgb(224, 224, 224);
+    transition: transform 150ms;
+}
+
+.choice-prefix {
+    padding: 1.5rem 2.5rem;
+    background-color: rgb(100, 143, 235);
+    color:rgb(255, 255, 255);
+}
+
+div, p {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+}
+
+
+.choice-text {
+    padding: 1.5rem;
+    width: 100%;
+  }
+
+.correct {
+    background-color: green;
+}
+
+.incorrect {
+    background-color: red;
+}
+
+h1 {
+    color:rgb(129, 125, 125);
+}
+
+#hud {
+    display:flex;
+    justify-content: space-around;
+}
+
+.hud-prefix {
+    text-align: center;
+}
