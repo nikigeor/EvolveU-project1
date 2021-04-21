@@ -7,10 +7,8 @@ Open VS code.
 Step 2: 
 Open the terminal and git clone https://github.com/nikigeor/EvolveU-project1.git.
 Step 3:
-Run "npm install". Make sure no other terminal is running "server.js"
+Run "npm install". Make sure no other terminal is running port 3001 or "server.js"
 Step 4: 
 run "node server.js"
 Step 5:
-Open another terminal(don't close the other terminal) and run "curl http://localhost:3001"
-Step 6:
 Open the browser and enter "localhost:3001" and Enjoy!
