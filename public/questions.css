@@ -12,7 +12,7 @@
 
 .choice-container:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(247, 137, 137, 0.5);
     transform: translateY(-0.1rem);
     transition: transform 150ms;
   }
@@ -21,8 +21,14 @@
       display: flex;
   }
 
+p.hud-prefix {
+    font-size: medium;
+    align-self: flex-start;
+}
+
 h2 {
-    color: grey;
+    color:#e15454;
+    text-align: center;
 }
 
 body {
@@ -30,9 +36,9 @@ body {
 }
 
 .container {
-    width: 800px;
-    max-width: 80%;
-    background-color: rgb(215, 216, 215);
+    width: 900px;
+    max-width: 200%;
+    background-color: rgb(241, 221, 221);
     margin: auto;
     border-radius: 5px;
     padding: 10px;
@@ -47,14 +53,19 @@ body {
 
 .choice-prefix {
     padding: 1.5rem 2.5rem;
-    background-color: rgb(100, 143, 235);
+    background-color: rgb(233, 120, 120);
     color:rgb(255, 255, 255);
+    display:grid;
 }
 
 div, p {
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 10px;
+}
+
+div {
+    align-items: center;
 }
 
 
@@ -64,7 +75,7 @@ div, p {
   }
 
 .correct {
-    background-color: green;
+    background-color: rgb(8, 193, 8);
 }
 
 .incorrect {
@@ -72,14 +83,10 @@ div, p {
 }
 
 h1 {
-    color:rgb(129, 125, 125);
+    color:rgb(233, 117, 117);
 }
 
 #hud {
     display:flex;
     justify-content: space-around;
-}
-
-.hud-prefix {
-    text-align: center;
 }
