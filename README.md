@@ -1,8 +1,8 @@
 Project 1: Trivia: Travel Edition
 
-This game is for fun/education purpose to test your knowledge on travel. To begin, follow these steps:
+This game is for fun/education purpose to test your knowledge on travel. At the end of the trivia, if you like to save your score, you must enter your username and click save, if not, you can play again or exit the trivia. To begin, follow these steps:
 
-Step 1: 
+Step 1:
 Open VS code.
 Step 2: 
 Open the terminal and git clone https://github.com/nikigeor/EvolveU-project1.git.
