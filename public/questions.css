@@ -21,7 +21,7 @@
   }
 
 p.hud-prefix {
-    font-size: medium;
+    font-size:small;
     align-self: flex-start;
 }
 
