@@ -12,3 +12,10 @@
 .high-score:hover {
     transform: scale(1.025);
 }
+
+/* animation */
+
+div {
+    animation-duration: 3s;
+    animation-delay: 2s;
+}

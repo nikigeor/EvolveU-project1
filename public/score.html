@@ -7,13 +7,17 @@
     <title>High Scores</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="score.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 <body>
     <div class="container">
         <div id="highScores" class="flex-center flex-column">
-            <h1 id="finalScore">Top 10</h1>
-            <ul id="topTenList"></ul>
-            <a class="btn" href="/">Home</a>
+            <h1 id="finalScore" class="animate__animated animate__fadeInRight">Top 10</h1>
+            <ul id="topTenList" class="animate__animated animate__slideInRight"></ul>
+            <a class="btn animate__animated animate__slideInUp" href="/">Home</a>
         </div>
     </div>
     <script src="score.js"> </script>

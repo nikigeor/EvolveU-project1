@@ -6,20 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The End</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 <body>
     <div class="container">
         <div id="end" class="flex-center flex-column">
-            <h1>Score:</h1>
-            <h1 id="yourScore"></h1>
+            <h1 class="animate__animated animate__fadeInUp">Score:</h1>
+            <h1 id="yourScore" class="animate__animated animate__fadeInUp"></h1>
             <form>
-                <input type="text" name="username" id="username" placeholder="username" />
-                <button type="submit" class="btn" id="saveScoreBtn" onclick="saveYourScore(event)" disabled>
+                <input type="text" name="username" id="username" placeholder="username" class="animate__animated animate__fadeInUp"/>
+                <button type="submit" class="btn animate__animated animate__fadeInUp" id="saveScoreBtn" onclick="saveYourScore(event)" disabled>
                     Save
                 </button>
             </form>
-            <a class="btn" href="trivia.html">Try Again</a>
-            <a class="btn" href="/">Home</a>
+            <a class="btn animate__animated animate__fadeInUp" href="trivia.html">Try Again</a>
+            <a class="btn animate__animated animate__fadeInUp" href="/">Home</a>
         </div>
     </div>
     <script src="/finish.js"></script>

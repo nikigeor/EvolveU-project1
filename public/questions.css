@@ -1,14 +1,13 @@
-
 .choice-container {
     display: flex;
     justify-content: space-around;
     margin-bottom: 0.5rem;
-    width:50%;
+    width: 50%;
     font-size: 1.8rem;
     border: 0.1rem solid rgb(red, green, blue);
     background-color: rgb(255, 255, 255);
     color: black;
-} 
+}
 
 .choice-container:hover {
     cursor: pointer;
@@ -51,8 +50,9 @@ body {
     transition: transform 150ms;
 }
 
-.choice-prefix {
+.choice-prefix {   
     padding: 1.5rem 2.5rem;
+    max-width: 100%;
     background-color: rgb(233, 120, 120);
     color:rgb(255, 255, 255);
     display:grid;
@@ -89,4 +89,15 @@ h1 {
 #hud {
     display:flex;
     justify-content: space-around;
+}
+
+/* animation */
+
+div {
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+}
+
+div.choice-container {
+    animation-duration: 0.5s;
 }

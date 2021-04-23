@@ -1,6 +1,7 @@
 console.log("Hello World!");
 const question = document.getElementById("question");
-const choices = Array.from(document.getElementsByClassName("choice-text"));
+const choices = Array.from(document.getElementsByClassName("choice-text")); 
+const choices2 = Array.from(document.getElementsByClassName("choice-prefix")); 
 const questionCounter2 = document.getElementById("questionCounter");
 const score2 = document.getElementById("score");
 
@@ -150,7 +151,7 @@ choices.forEach(choice => {
             classToApply = 'correct';
         } else {
             console.log(classToApply);
-    }
+        }
         if (classToApply === "correct") {
             incrementScore(correctAns);
         }
@@ -164,6 +165,38 @@ choices.forEach(choice => {
 
     });
 });
+
+choices2.forEach(choice => {
+    choice.addEventListener("click", (e) => {
+        if (!acceptingAnswers) return;
+
+        acceptingAnswers = false;
+        const selectedChoice = e.target;
+        const selectedAnswer = selectedChoice.dataset['number'];
+        console.log(selectedAnswer);
+        console.log(currentQuestion);
+
+        let classToApply = 'incorrect';
+        if (selectedAnswer == currentQuestion.answer) {
+
+            classToApply = 'correct';
+        } else {
+            console.log(classToApply);
+        }
+        if (classToApply === "correct") {
+            incrementScore(correctAns);
+        }
+        
+      selectedChoice.parentElement.classList.add(classToApply);
+
+      setTimeout( () => {
+        selectedChoice.parentElement.classList.remove(classToApply);
+        getNewQuestion();
+      }, 1000);
+
+    });
+});
+
 
 incrementScore = num => {
     score += num;
